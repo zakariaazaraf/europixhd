@@ -75,19 +75,66 @@ header div {
     margin: 15px .66%;
     border: 2px solid #888;
     position: relative;
+    cursor:pointer;
+    transition: all 1s ease;
+    
+    
 }
 
-.container .cards .card  img{  
+.container .cards .card .front{
+
+    transition: all .5s ease;
+    backface-visibility:hidden;
+    transform: perspective(1000px) rotateY(0deg);
+
+}
+
+
+.container .cards .card .front > img{  
     width: 100%;
     height: 100%;
 }
 
-.container .cards .card span{
+.container .cards .card .front span:first-of-type{
     position: absolute;
     top:0;
     right:0;
     color: white;
     padding:  5px;
     margin:4px;
-    border: 1px solid #666
+    border: 1px solid #666;
+
 }
+
+.container .cards .card figure{
+    position: absolute;
+    height: 100%;
+    width : 100%;
+    left:0;
+    top:0;
+    
+}
+
+.container .cards .card .back{
+    background-color: #888;
+    backface-visibility:hidden;
+    transition:  all .5s ease;
+    transform: perspective(1000px) rotateY(180deg);
+
+}
+
+
+.container .cards .card:hover > .front{
+    transform: perspective(1000px) rotateY(-180deg);
+    transition: all 1s ease;
+}  
+
+
+
+.container .cards .card:hover > .back{
+    transform: perspective(1000px) rotateY(0deg);
+    transition: all 1s ease;
+    
+    
+}  
+
