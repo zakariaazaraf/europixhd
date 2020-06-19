@@ -5,18 +5,24 @@
 body{
      background-image: url("../Images/background.jpg") ; 
 }
-a {
+
+header div .logo  {
     float: left;
+    width:21%;
+    margin-left:2%;
+    margin-right:2%;
 }
-ul  {
+
+header div ul  {
     text-decoration: solid ;
     text-transform: uppercase;
     list-style: none;
-    position: absolute;
-    right:0px;
+    float : right; 
     color: white;
-    top: 15px;
-    right: 50px;
+    width:71%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-top:10px;
      
 }
 
@@ -30,6 +36,10 @@ li {
     margin: -2px;
     font-size: 12px;
     
+}
+
+header div ul li input{
+    background-color:rgba(0,0,0,0.3);
 }
 
 li > a{
@@ -137,4 +147,16 @@ header div {
     
     
 }  
+
+
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid #0000004a;
+    border-left: 4px solid transparent;
+}
 
