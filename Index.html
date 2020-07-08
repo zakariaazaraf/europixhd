@@ -1,356 +1,955 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        EuropixHd | ZakariaBenSalek
-    </title>
-    <!-- stylesheet files -->
-    <link rel="stylesheet" href="Css\main.css">
+    <meta name="author" content="zakaria azaraf">
+    <meta name="description" ceontet="website movie">
+    <title>europixhd | zakariabensalek</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <!-- Starting the Header section -->
+    <!-- Starting the header coontent -->
     <header>
-        <div>
-            <a href="#" class="logo"><img src="Images/logo.png" alt="EuropixLogo"></a>
+        <div class="container">
+
+            <div><img src="images/logo.png" alt="logo"></div>
+
+            <button class="show-navbar" id="dropButton">
+
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+
+        <nav>
             <ul>
-                <li>Home</li>
-                <li>Genre</li>
-                <li>Movies</li>
-                <li>top 50</li>
-                <li>yers</li>
-                <li>tv shows</li>
+                <li><a href="#">home </a></li>
+                <li><a href="">genre <b class="caret"></b></a></li>
+                <li><a href="">movies <b class="caret"></b></a></li>
+                <li><a href="">top 50<b class="caret"></b></a></li>
+                <li><a href="">year<b class="caret"></b></a></li>
+                <li><a href="">tv show<b class="caret"></b></a></li>
                 <li>
-                    <form action="get">
-                        <input type="text" name="searchFild" placeholder="SEARCH">
-                        <button></button>>
+                    <form action="" method="GET">
+                        <input type="text" name="search" placeholder="SEARCH" title="3 caracres minimum">
+                        <button type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </form>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
-    <!-- Ending the Header section -->
 
-    <!-- Starting the container of the cards-->
+    <div class="main-container">
+        <div class="slide-container">
 
-    <div class="container">
-        <div class="titleRate">
-            <h3>top rated movies - top 1-100:</h3>
-            <hr>
+
+            <div class="item active"><a href=""><img class="act" src="./images/beautifulGirl1.jpg" alt=""></a></div>
+
+            <div class="item preActive"><a href=""><img src="./images/beautifulGirl2.jpg" alt=""></a></div>
+
+            <div class="item"><a href=""><img src="./images/beautifulGirl3.jpg" alt=""></a></div>
+
+            <div class="item "><a href=""><img src="./images/beautifulGirl4.jpg" alt=""></a></div>
+
+            <div class="item"><a href=""><img src="./images/beautifulGirl5.jpg" alt=""></a></div>
+
+            <div class="item"><a href=""><img src="./images/beautifulGirl6.jpg" alt=""></a></div>
+
+            <div class="item"><a href=""><img src="./images/beautifulGirl7.jpg" alt=""></a></div>
+
+            <div class="item"><a href=""><img src="./images/beautifulGirl1.jpg" alt=""></a></div>
+
         </div>
-        <div class="cards">
 
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
+        <div class="footer">
+            <p>Please Like and share our website with your friends to support us. Thank you!</p>
+            <div class="social-media">
+                <a href="#"> <i class="fa fa-twitter"> </i>tweet</a>
+                <a href="#"> <i class="fa fa-facebook"> </i>share 35</a>
             </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                </figure>
-
-            </div>
-
-            <div class="card">
-
-                <figure class="front">
-                    <span>HD</span>
-                    <img src="Images/godfather.jpg">
-                </figure>
-
-                <figure class="back">
-                    <h2>ben salek</h2>
-                    <p>this is my information</p>
-                    <span>another infos</span>
-                    <b class="caret"></b>
-                </figure>
-
-            </div>
-
-
 
         </div>
     </div>
-    <!-- End the container of the cards-->
-    <!-- javascript files -->
-    <script src="Js\main.js"></script>
+
+    <div class="cat-title">
+        <h3><a href="#">trending movies :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/code-8-2019.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/extraction-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/fantasy-island-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/one-flew-over-the-cuckoos-nest.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-aerialist-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-outpost-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="images/cardsImages/the-platform-el-hoyo-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/you-should-have-left-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+    <div class="cat-title">
+        <h3><a href="#">Latest Bollywood Movies :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+    <div class="cat-title">
+        <h3><a href="#">Latest New Movies :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+    <div class="cat-title">
+        <h3><a href="#">Quality Update (HD) :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+    <div class="cat-title">
+        <h3><a href="#">Recently Added TV Series :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+    <div class="cat-title">
+        <h3><a href="#">Requested Movies :</a></h3>
+        <hr>
+    </div>
+
+    <div class="tranding-section cards">
+        <figure>
+            <span>hd</span><img src="./images/cardsImages/a-separation.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-godfather-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="Images/cardsImages/the-intouchables.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/the-silence-of-the-lambs.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/se7en.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/dag-2.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/365-days-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/alone-wolf-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+        <figure>
+            <span></span><img src="./images/cardsImages/bad-boys-for-life-2020.jpg" alt="">
+            <figcation>
+                <h3></h3>
+                <span></span>
+                <i></i>
+                <span></span>
+                <span>
+                    <i></i>
+                    <h3></h3>
+                </span>
+            </figcation>
+        </figure>
+    </div>
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
