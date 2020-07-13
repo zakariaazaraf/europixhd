@@ -1,50 +1,40 @@
-*{
-    box-sizing:border-box;
+.scene {
+  width: 200px;
+  height: 260px;
+  perspective: 600px;
 }
 
-.container{
-    width: 100vw;
-    height:100vh;
-    position: relative;
-    top:0;
-    left:0;
-    overflow:hidden;
-}
-
-.container div{
-    transition: all 1.2s ease;
-    display:none;
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
 }
 
 
-.container img{
-    width:100vw;
-    height:100vh;
-    background-size: cover;
+.card__face {
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  /* backface-visibility: hidden; */
+  transition: transform 1s;
 }
 
-.preActive{
-    display:block !important;
-    position:absolute;
-    top:0;
-    left:100%;
+.card__face--front {
+  background: red;
+  transform: rotateY(0deg);
 }
 
-.active{
-    display:block !important;
-    position:absolute;
-    top:0;
-    left:0;
-    
+.card__face--back {
+  background: blue;
+  transform: rotateY( 180deg );
 }
 
-
-.hide{
-    position: relative;
-    left:-100%;
-    display:block !important; 
+.scene .card:hover > .card__face--front{
+    transform: rotateY(-180deg);
 }
 
-
-
-
+.scene .card:hover > .card__face--back{
+    transform: rotateY(0deg);
+}
