@@ -28,6 +28,7 @@ a{
 
 .cont{
     background: rgba(0, 0, 0, 0.4);
+    position:relative;
 }
 
 header{
@@ -49,6 +50,15 @@ header .container{
     align-items: center;
     justify-content: space-between;
 }
+
+header .container div:first-child{
+    margin:0;
+}
+
+header .container:first-child{
+    margin:0;
+}
+
 header nav {
     /* display: flex; */
     margin-right: 2%;
@@ -66,7 +76,7 @@ header nav {
 header nav li{
     display: inline-block;
     border: 1px solid gray;
-    padding: 10px 0;
+    padding: 7px 0;
     position: relative; /*this is for the icon to get his place*/
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
@@ -75,7 +85,7 @@ header nav li{
 
 header nav li a{
     color: #fff;
-    padding: 11px 30px;
+    padding: 8px 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -119,10 +129,9 @@ header nav li:hover > a .caret{
 header nav form input[type="text"]{
     background-color: inherit;
     border: none;
-    font-weight: 10px;
-    border-radius: none;
-    padding:0px;
+    padding:0 0 0 15px;
     color: #fff;
+    font-size:12px;
     height:100%;
 }
 
@@ -182,19 +191,45 @@ header nav form button i:hover{
 }
 
 
-/* header nav form button,
-header nav form i{
-    padding:0;
-} */
+/* Starting the media query of the Header*/
 
-@media(max-width: 1076px){
+/* @media(max-width: 1076px){
     header{
         min-height:64px;
     }
+} */
+
+@media(max-width:1250px){
+    header nav li a{
+        padding: 11px 25px !important;
+    }
 }
 
+@media(max-width:1200px){
+    header nav li a{
+        padding: 11px 15px !important;
+    }
+}
 
- @media(max-width:1075px){
+@media (max-width: 1150px){
+    header nav li a{
+        padding: 10px 12px !important;
+    }
+}
+
+@media (max-width: 1100px){
+       header nav li a{
+        padding: 11px 14px !important;
+    }
+}
+
+@media (max-width: 1050px){
+    header nav li a{
+        padding: 10px 12px !important;
+    }
+}
+
+ @media(max-width:992px){
 
     header nav{
         display:none;
@@ -218,7 +253,6 @@ header nav form i{
         width:100%;
         margin:0;
         flex-direction: column;
-        max-height: 250px;
         overflow-y: auto;
         -webkit-scrollbar-color: gray #ccc;
         -ms-scrollbar-color: gray #ccc;
@@ -248,7 +282,6 @@ header nav form i{
         display:block;
         width:100%;
     }
-
 
 } 
 
@@ -324,6 +357,8 @@ header nav form i{
     order:2;
 }
 
+/**  Starting the container of the slide  **/
+
 .main-container .slide-container .item{
     width: 100%;
     height: 100%;
@@ -361,118 +396,55 @@ header nav form i{
 }
 
 
+/*  Starting the media query for the slides*/
 
+/*
+  PS: when you use the media query put the larger screen first than the smallest one and so on
+*/
 
-
-
-
-@media(max-width:1250px){
-    header nav li a{
-        padding: 11px 20px !important;
+@media (max-width: 992px){
+    .main-container{
+        width: 90vw;
+        height: 365px;
+        margin:90px auto 20px auto;
     }
-}
 
-@media(max-width:1200px){
-    header nav li a{
-        padding: 11px 15px !important;
-    }
-}
-
-@media(max-width:1100px){
-    header nav li a{
-        padding: 11px 14px !important;
-    }
 
     .main-container .footer .social-media{
         justify-content: center;
-        flex-basis: 30%;
     }
 
-    .main-container .footer p{
-        flex-basis:70%;
-    }
 }
 
-@media(max-width:1000px){
-    .main-container .footer p{
-        font-size:14px;
+@media(max-width:688px){
+    .main-container{
+        width:100vw;
+        height:220px;
+        margin:70px 0 20px 0;
     }
-}
 
-@media(max-width:840px){
     .main-container .footer{
         flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
     }
 
     .main-container .footer p{
         order:1;
-        justify-content: center;
-        margin: 2px 0;
-    }
+        flex-basis:70%;
+        font-size: 13px;
+    } 
 
     .main-container .footer .social-media{
-        margin:2px 0;
+        flex-basis:30%;
     }
+
 }
 
 
 
-
-@media(max-width:800px){
-    .main-container{
-        width:80vw ;
-        height:380px ;
-        margin:100px auto 20px auto;
-    }
-}
-
-@media(max-width:750px){
-    .main-container{
-        width:90vw ;
-        height:366px ;
-        margin:100px auto 20px auto;
-    }
-}
-
-@media(max-width:700px){
-    .main-container{
-        width:100vw;
-        height:353px;
-        margin:100px 2px 20px 2px;
-    }
-}
-
-@media(max-width:650px){
-    .main-container{
-        width:100vw;
-        height:346px;
-        margin:100px 2px 20px 2px;
-    }
-}
-
-@media(max-width:600px){
-    .main-container{
-        width:100vw;
-        height:340px;
-        margin:100px 2px 20px 2px;
-    }
-}
-
-@media(max-width:550px){
-    .main-container{
-        width:100vw;
-        height:333px;
-        margin:100px 2px 20px 2px;
-    }
-}
-
-@media(max-width:500px){
-    .main-container{
-        width:100vw;
-        height:326.5px;
-        margin:100px 2px 20px 2px;
-    }
-}
+/*  Starting cards style  */
 
 .cards{
     width: 100%;
@@ -491,7 +463,6 @@ header nav form i{
     margin: 5px .4%;
     border: 1px solid gray;
     position: relative;
-    transition: all 10s ease;
     overflow: hidden; 
     
 }
@@ -499,7 +470,7 @@ header nav form i{
 .cards figure img{
     width:100%;
     height:100%;
-    border: 1px solid #fff;
+    border: 1px solid gray;
     transition: all .36s ease; 
     transform:rotate(0deg);
     transform: perspective(600px);
@@ -529,7 +500,7 @@ header nav form i{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     background-color:#222;
-    border: 1px solid #fff;
+    border: 1px solid gray;
     opacity:0; 
     transform: rotateY(90deg);
     transition: all 0.36s ease;     
@@ -583,7 +554,7 @@ transform: perspective(600px);
 
 .cat-title{
     display:inline-block;
-    margin-left: 18px;
+    margin-left: 2.2%;
 }
 
 .cat-title h3 {
@@ -592,7 +563,6 @@ transform: perspective(600px);
     text-transform: capitalize;
     font-style: italic;
     cursor: pointer;
-    /* margin: 10px 0 7px 6%;  */
     padding: 3px 50px;
     margin: 6px 0;
     
@@ -616,6 +586,39 @@ border-color:#808080;
     margin: 2px auto;
     opacity: .5;
 }
+
+/*  Starting the media query for the cards and their titles*/
+
+@media(max-width:992px){
+    .cards figure{
+        flex-basis: 19%;
+        max-width:133px;
+    }
+}
+
+@media(max-width: 688px){
+
+    .cat-title{
+        margin-left: 8.3%;
+    }
+
+    .cards{
+        margin-bottom:40px;
+    }
+
+    .cards figure{
+        flex-basis: 40%;
+        margin: 5px 1.7%;
+        max-width:133px;
+    }
+
+    .cont div:nth-child(15){
+        margin-left: 4.3%;
+    }
+}
+
+
+/*  Starting Frequently asked questions Style */
 
 .col{
     color:#bbb !important;
@@ -645,6 +648,15 @@ border-color:#808080;
     text-decoration: underline;
 }
 
+/*  
+        Starting the frequently asked questions section for media query 
+        PS : It looks fine so don't bother yourself to adjust it
+*/
+
+
+/*
+        Starting the footer of the page style
+*/
 
 .bottomFooter{
     background-color: #252531;
@@ -655,9 +667,10 @@ border-color:#808080;
     display:flex;
     flex-direction: column;
     align-items:center;
-    justify-content:center;
+    /* justify-content:center; => use this if the diretion is row or strech*/
     width:50%;
     color: #a9a9a9 ;
+    padding: 25px 0;
 }
 
 .bottomFooter .container .keys{
@@ -671,7 +684,7 @@ border-color:#808080;
 }
 
 .bottomFooter .container p{
-    margin: 0;
+    margin: 3px;
 }
 
 .bottomFooter .container .keys span{
@@ -682,15 +695,42 @@ border-color:#808080;
     border-radius: 20px;
 }
 
-/* .questionAnswer:last-child > p{
-    padding-bottom:30px;
-    margin-bottom:0;
-} */
-
 .bottomFooter .container .keys span:hover{
     color: #25e3ff;
     border-color: #25e3ff;
 }
+
+.bottomFooter .container .wrap{
+    color:#888;
+    border: 1px solid #444;
+    background-color: #2d2d3c;
+    padding: 3px;
+    font-size: 14px;
+}
+
+/*
+        Starting the footer section for media query
+*/
+
+@media(max-width:992px){
+    .bottomFooter .container{
+        width:100%;
+    }
+
+    .bottomFooter .container .keys{
+        width:80%;
+    }
+}
+
+@media(max-width:688px){
+    .bottomFooter .container .keys{
+        width:90%;
+    }
+}
+
+
+
+
 @font-face{
     font-family: 'proxima';
     src: url('../fonts/FontsFree-Net-Proxima-Nova-Bold.otf');
