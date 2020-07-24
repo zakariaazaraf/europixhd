@@ -73,7 +73,7 @@ header nav {
 }
 
 
-header nav li{
+header nav li.dropdown{ 
     display: inline-block;
     border: 1px solid gray;
     padding: 7px 0;
@@ -81,9 +81,10 @@ header nav li{
     color: #fff;
     background-color: rgba(0, 0, 0, 0.3);
     margin:-2px;
+    position:relative;
 }
 
-header nav li a{
+header nav li.dropdown a{
     color: #fff;
     padding: 8px 30px;
     font-family: 'Open Sans', sans-serif;
@@ -92,23 +93,23 @@ header nav li a{
     
 }
 
-header nav li:first-child{
+header nav li.dropdown:first-child{
     margin-left:0;
 }
 
-header nav li:nth-child(7) /*header nav li:last-child*/{
+header nav li.dropdown:nth-child(7) /*header nav li:last-child*/{
     margin-right:0;
     /* padding:4px; */
 }
-header nav li:last-child:hover {
+header nav li.dropdown:last-child:hover {
     background-color: #14161b;
 }
 
-header nav li:last-child:hover > form button i{
+header nav li.dropdown:last-child:hover > form button i{
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-header nav li:hover > a{
+header nav li.dropdown:hover > a{
     color: #25e3ff;
     background-color: #282c35;
 
@@ -122,7 +123,7 @@ header nav li:hover > a{
     margin: 0 0 2px 3px;
 }
 
-header nav li:hover > a .caret{
+header nav li.dropdown:hover > a .caret{
     border-top-color: #25e3ff;
 }
 
@@ -166,6 +167,87 @@ header nav form button i:hover{
     color:#fff;
 }
 
+
+/*  dealing with the dropdwon menu */
+
+header nav li .dropdownMenu{
+    position:absolute;
+    background-color: #282C35;
+    right:0;
+    margin: 8px 0;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding: 5px 0;
+    width:300px;
+    display:none;
+}
+
+.showFlex{
+    display:flex !important;
+}
+
+.dropActive{
+    color: #25e3ff !important;
+background-color: #282c35 !important;
+}
+
+.caretActive{
+    border-top-color: #25e3ff;
+}
+
+.column{
+    flex-direction:column;
+    width:auto !important;
+}
+
+header nav li .dropdownMenu li{
+    flex-basis:30%;
+    padding: 2px;
+    margin: 4px 2px 4px 0;
+    background-color: #313540;
+    border: 1px solid #3c4660;
+}
+
+header nav li .column li{
+    border: none;
+}
+
+header nav li .column li a{
+    border: none;
+    justify-content: stretch !important;
+    font-size: 14px;
+}
+
+header nav li .dropdownMenu li a{
+    text-transform: capitalize;
+    padding: 3px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+header nav li .dropdownMenu li:hover{
+    background-color: #25e3ff;
+    cursor:pointer;
+}
+
+header nav li .dropdownMenu li:hover > a{
+    color: #404043;
+}
+
+header nav li .column li a{
+    padding:0;
+    text-transform: capitalize;
+    padding: 3px 20px;
+    white-space: nowrap;
+}
+
+header nav li .dropdownMenu  hr{
+    width:100%;
+    color:white;
+}
+
 .show-navbar{
     background-color:transparent;
     padding:3px 5px;
@@ -200,31 +282,31 @@ header nav form button i:hover{
 } */
 
 @media(max-width:1250px){
-    header nav li a{
+    header nav li.dropdown a{
         padding: 11px 25px !important;
     }
 }
 
 @media(max-width:1200px){
-    header nav li a{
+    header nav li.dropdown a{
         padding: 11px 15px !important;
     }
 }
 
 @media (max-width: 1150px){
-    header nav li a{
+    header nav li.dropdown a{
         padding: 10px 12px !important;
     }
 }
 
 @media (max-width: 1100px){
-       header nav li a{
+       header nav li.dropdown a{
         padding: 11px 14px !important;
     }
 }
 
 @media (max-width: 1050px){
-    header nav li a{
+    header nav li.dropdown a{
         padding: 10px 12px !important;
     }
 }
@@ -267,18 +349,18 @@ header nav form button i:hover{
         
     }
 
-    header nav li{
+    header nav li.dropdown{
         display: block;
         flex-basis:100%;
         margin:0;
         
     }
 
-    header nav li:not(:last-child){
+    header nav li.dropdown:not(:last-child){
         padding:0;
     }
 
-    header nav li a{
+    header nav li.dropdown a{
         display:block;
         width:100%;
     }
@@ -519,7 +601,7 @@ header nav form button i:hover{
 .cards figure figcaption h3:last-child{
     width:85%;
     background-color: rgba(255, 255, 255, 0.2);
-    margin: auto auto 4px;
+    margin-bottom: 4px !important;
 }
 
 .cards figure figcaption span:not(:first-of-type) {

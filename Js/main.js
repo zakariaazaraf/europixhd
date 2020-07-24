@@ -8,6 +8,59 @@ card.addEventListener('mouseout', () => {
     fig.style.transform = "perspective(1000px) rotateY(180deg)"
 }) */
 
+/*  start working on the dropdown menu navigation */
+let dropdownmenus = document.querySelectorAll('nav .dropdownMenu'),
+    drop = document.querySelectorAll(".drop"),
+    navigation = document.querySelector("nav"),
+    anchor = document.querySelectorAll(".drop a"),
+    carets = document.querySelectorAll(".drop a b");
+
+
+navigation.addEventListener("click", (e) => {
+
+
+    anchor.forEach(item => {
+
+        /*test if i get the anchor that i want */
+        if (e.target === item) {
+
+            // Remove the classes exipt the current one, to let the toggle complet the work
+            dropdownmenus.forEach(itemDrop => {
+
+                if (e.target.nextElementSibling !== itemDrop) {
+                    itemDrop.classList.remove("showFlex");
+                }
+
+            });
+
+            anchor.forEach(itemAnchor => {
+
+                if (e.target !== itemAnchor) {
+                    itemAnchor.classList.remove("dropActive");
+                }
+
+            });
+
+            carets.forEach(itemCaret => {
+
+                if (e.target.firstElementChild !== itemCaret) {
+                    itemCaret.classList.remove("caretActive");
+                }
+
+            });
+
+            //add the classes in the right places
+            e.target.nextElementSibling.classList.toggle("showFlex");
+            e.target.classList.toggle("dropActive");
+            e.target.firstElementChild.classList.toggle("caretActive");
+        }
+    });
+
+
+    console.log(anchor);
+    console.log(e.target);
+});
+
 let dropdownButton = document.querySelector('#dropButton'),
     navbar = document.querySelector("nav");
 
