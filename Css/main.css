@@ -86,7 +86,7 @@ header nav li.dropdown{
 
 header nav li.dropdown a{
     color: #fff;
-    padding: 8px 30px;
+    padding: 7px 30px;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
     text-transform: uppercase;
@@ -283,31 +283,44 @@ header nav li .dropdownMenu  hr{
 
 @media(max-width:1250px){
     header nav li.dropdown a{
-        padding: 11px 25px !important;
+        padding: 7px 25px !important;
+    }
+
+    header nav li .dropdownMenu li a{
+        padding: 4px 0 !important;
+        /* padding-bottom: 4px !important; */
+    }
+
+    header nav li .column li a{
+        padding: 3px 20px !important;
     }
 }
 
 @media(max-width:1200px){
     header nav li.dropdown a{
-        padding: 11px 15px !important;
+        padding: 7px 15px !important;
+        /* padding: 5px 15px !important; */
     }
+
+    
 }
 
 @media (max-width: 1150px){
     header nav li.dropdown a{
         padding: 10px 12px !important;
+        /* padding: 5px 12px !important; */
     }
 }
 
 @media (max-width: 1100px){
        header nav li.dropdown a{
-        padding: 11px 14px !important;
+        padding: 7px 14px !important;
     }
 }
 
 @media (max-width: 1050px){
     header nav li.dropdown a{
-        padding: 10px 12px !important;
+        padding: 7px 12px !important;
     }
 }
 
@@ -365,7 +378,42 @@ header nav li .dropdownMenu  hr{
         width:100%;
     }
 
-} 
+    header nav li .dropdownMenu{
+        width:100%;
+        position: static;
+    }
+
+    header nav li .dropdownMenu li{
+        padding:0;
+        margin: 2px 0;
+        flex-basis: 15%;
+    }
+
+    header nav li .dropdownMenu li a{
+        font-size: 13px;
+        padding: 4px 0 !important;
+    }
+
+    header nav li .column li a{
+        padding: 3px 20px !important;
+    }
+
+}
+
+
+@media(max-width: 600px){
+    header nav li .dropdownMenu li{
+        flex-basis: 18%;
+    }
+}
+
+@media(max-width: 450px){
+    header nav li .dropdownMenu li{
+        flex-basis: 30%;
+    }
+}
+
+
 
 
 /*    The slide container  */
@@ -439,12 +487,36 @@ header nav li .dropdownMenu  hr{
     order:2;
 }
 
+.circles{
+    position:absolute;
+    bottom: 4%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /* background: transparent;  ==> doesn't matter*/
+    
+}
+
+.circles .circle{
+    display: inline-block;
+    width:15px;
+    height:15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor:pointer;
+    transition: background-color .3s ease-in-out;
+    
+}
+
+.circleActive{
+    background-color: white;
+}
+
 /**  Starting the container of the slide  **/
 
 .main-container .slide-container .item{
     width: 100%;
     height: 100%;
-    transition: all 1s  ease-in-out;
+    transition: all 1s ease-in-out;
     display: none;
 }
 
@@ -455,12 +527,18 @@ header nav li .dropdownMenu  hr{
 
 }
 
-
 .preActive{
     display:block !important;
     position:absolute;
     top:0;
     left:100%;
+}
+
+.preActiveTow{
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: -100%;
 }
 
 .active{
@@ -475,6 +553,16 @@ header nav li .dropdownMenu  hr{
     position: relative;
     left:-100%;
     display:block !important; 
+}
+
+.hideTow{
+    position: relative;
+    left: 100%;
+    display: block !important;
+}
+
+.colorCircle{
+    background-color: white;
 }
 
 
