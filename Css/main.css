@@ -601,7 +601,6 @@ header nav li .dropdownMenu hr {
 .cards figure img {
   object-fit: contain;
   max-height: 250px;
-  border: 1px solid gray;
   transition: all 0.36s ease;
   transform: rotate(0deg) perspective(600px);
 }
